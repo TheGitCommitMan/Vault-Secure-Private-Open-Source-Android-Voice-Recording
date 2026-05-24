@@ -1,0 +1,6 @@
+{
+  "name": "Voice Journal",
+  "description": "On-device, AES-256 encrypted voice journal with native speech recognition and zero internet required.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

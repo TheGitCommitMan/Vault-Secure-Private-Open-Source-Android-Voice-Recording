@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background subtle glow inside foreground -->
+    <path
+        android:fillColor="#1514B8A6"
+        android:pathData="M 54 54 m -40 0 a 40 40 0 1 0 80 0 a 40 40 0 1 0 -80 0" />
+
+    <!-- Microphone capsule (Upper section) -->
+    <path
+        android:fillColor="#FFFF9800"
+        android:pathData="M46,24h16c4.4,0,8,3.6,8,8v14c0,4.4-3.6,8-8,8H46c-4.4,0-8-3.6-8-8V32C38,27.6,41.6,24,46,24z" />
+
+    <!-- Padlock Body on bottom-right overlay or custom center cut-out -->
+    <!-- Sound Waves or shield framing -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF14B8A6"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M32,44c0,11,9,20,22,20s22-9,22-20" />
+        
+    <!-- Mic Stand handle and base -->
+    <path
+        android:fillColor="#FF14B8A6"
+        android:pathData="M52,64v14h-8v4h20v-4h-8v-14H52z" />
+
+    <!-- Lock graphic inside mic capsule -->
+    <path
+        android:fillColor="#FF06090E"
+        android:pathData="M50,44h8v-4c0-2-1.8-3.5-4-3.5s-4,1.5-4,3.5V44z" />
+    <path
+        android:fillColor="#FF14B8A6"
+        android:pathData="M48,43h12v10H48V43z" />
+</vector>
