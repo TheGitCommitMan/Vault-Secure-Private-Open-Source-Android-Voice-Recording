@@ -1,34 +1,30 @@
-# Vault: Encrypted Voice Architecture
+# 🔐 Vault: Secure Voice Recording
 
-Vault is a privacy-focused, open-source Android application designed for secure audio capture and storage. Built on a foundation of zero-trust principles, Vault utilizes industry-standard AES-256 encryption to ensure that voice recordings remain private and accessible only to the authorized user.
+**Professional-grade, encrypted audio capture for Android.**
 
-Vault is more than a recording tool; it is a commitment to mobile security, featuring an encrypted file system and a secure-entry UI.
+Vault is a privacy-first application designed for users who require absolute security for their voice data. Utilizing modern Android security standards and a zero-trust architecture, Vault ensures your recordings are protected from the moment they are captured.
 
-## 🔐 Technical Setup
+---
 
-Instructions for developers looking to contribute to or audit the Vault security architecture.
+## 🛡️ Security Architecture
 
-### Prerequisites
+- **Military-Grade Encryption**: Every recording is encrypted at rest using **AES-256-GCM** with keys managed in the **Android Keystore System**.
+- **Biometric Authentication**: Secure-entry UI requiring Fingerprint or Face Unlock before accessing the recording library.
+- **Encrypted File System**: Audio data is never stored in cleartext; it remains in a private, encrypted internal storage partition.
+- **Zero-Cloud Policy**: Your voice data stays on your device. No cloud syncing, no external uploads.
 
-- [Android Studio](https://developer.android.com/studio)
-- Basic understanding of Android Keystore and Encryption APIs
+---
 
-### Installation Guide
+## 🚀 Features
 
-1. **Open Source Core**
-   Import the project into Android Studio via the **Open** menu.
+- **High-Fidelity Capture**: Lossless audio recording with real-time waveform visualization.
+- **Secure Library**: Metadata-only indexing for rapid search without compromising file security.
+- **Auto-Lock**: Immediate session termination when the application is backgrounded.
 
-2. **Environment Synchronization**
-   Wait for the project to index and for Gradle to download the necessary security libraries.
+---
 
-3. **Secrets Management**
-   The application's intelligent metadata indexing requires a secure API bridge.
-   - Create a `.env` file in the root directory.
-   - Add: `GEMINI_API_KEY=your_api_key_string`
-   - See `.env.example` for reference.
+## 🛠️ Setup & Audit
 
-4. **Build Permissions**
-   In the `build.gradle.kts` file, ensure the `signingConfig` is optimized for your local development environment to facilitate seamless debugging and iterative testing.
-
-5. **Deploy and Audit**
-   Deploy the application to a secure emulator or test device. Once running, you can explore the encryption workflow and recording pipeline.
+1.  **Clone**: `git clone https://github.com/TheGitCommitMan/Vault-Secure-Private-Open-Source-Android-Voice-Recording.git`
+2.  **Dependencies**: Uses the **Jetpack Security** library for crypto-management.
+3.  **Run**: Deploy via Android Studio. Ensure Biometric Hardware is available on the target device.
