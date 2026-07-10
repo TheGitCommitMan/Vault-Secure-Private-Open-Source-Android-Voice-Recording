@@ -1,21 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Vault: Encrypted Voice Architecture
 
-# Run and deploy your AI Studio app
+Vault is a privacy-focused, open-source Android application designed for secure audio capture and storage. Built on a foundation of zero-trust principles, Vault utilizes industry-standard AES-256 encryption to ensure that voice recordings remain private and accessible only to the authorized user.
 
-This contains everything you need to run your app locally.
+Vault is more than a recording tool; it is a commitment to mobile security, featuring an encrypted file system and a secure-entry UI.
 
-View your app in AI Studio: https://ai.studio/apps/d808ee6b-9cd8-4d29-abef-91a48de95b08
+## 🔐 Technical Setup
 
-## Run Locally
+Instructions for developers looking to contribute to or audit the Vault security architecture.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+### Prerequisites
 
+- [Android Studio](https://developer.android.com/studio)
+- Basic understanding of Android Keystore and Encryption APIs
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+### Installation Guide
+
+1. **Open Source Core**
+   Import the project into Android Studio via the **Open** menu.
+
+2. **Environment Synchronization**
+   Wait for the project to index and for Gradle to download the necessary security libraries.
+
+3. **Secrets Management**
+   The application's intelligent metadata indexing requires a secure API bridge.
+   - Create a `.env` file in the root directory.
+   - Add: `GEMINI_API_KEY=your_api_key_string`
+   - See `.env.example` for reference.
+
+4. **Build Permissions**
+   In the `build.gradle.kts` file, ensure the `signingConfig` is optimized for your local development environment to facilitate seamless debugging and iterative testing.
+
+5. **Deploy and Audit**
+   Deploy the application to a secure emulator or test device. Once running, you can explore the encryption workflow and recording pipeline.
